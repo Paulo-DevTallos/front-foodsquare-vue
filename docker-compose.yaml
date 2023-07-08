@@ -5,17 +5,12 @@ services:
     build: .
     entrypoint: sh ./.docker/entrypoint.sh
     container_name: front-foodsquare
-    volumes: 
+    volumes:
       - .:/home/app/front-foodsquare
     working_dir: /home/app/front-foodsquare
     ports:
       - 3021:3021
-    # networks:
-    #   - foodsquare-network
     restart: always
     tty: true
-    environment: 
+    environment:
       - CHOKIDAR_USEPOLLING=true
-# networks:
-#   foodsquare-network:
-#     external: true
