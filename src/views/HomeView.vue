@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-3xl font-bold underline">
     HomeView
   </div>
 </template>
